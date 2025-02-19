@@ -1,0 +1,3 @@
+# Haskell Runtime Crash: Out-of-Bounds List Access
+
+This repository demonstrates a common error in Haskell: attempting to access a list element using an index that is out of bounds.  This can lead to unexpected runtime crashes. The `bug.hs` file shows the unsafe code, and `bugSolution.hs` presents a safer alternative using pattern matching or the `safe` package.  The issue is that using `!!` to access list elements does not perform boundary checks, which can lead to program crashes if the index is out of range. The solution emphasizes safe list handling techniques that prevent this runtime failure.
